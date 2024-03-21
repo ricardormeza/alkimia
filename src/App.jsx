@@ -1,4 +1,6 @@
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import Navbar from './components/header/Navbar'
+import Inicio from './pages/1.inicio/inicio'
 import './App.css'
 
 function App() {
@@ -7,7 +9,9 @@ function App() {
   return (
     <>
     <Navbar />
+    <Inicio />
     <div className='bg-red-500'>
+      
       <h1 className="text-3xl font-bold text-yellow-500 underline">
       Hello world!
     </h1>
