@@ -6,3 +6,64 @@
 body {
     @apply bg-gray-200;
 }
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.circuloGris{
+    background-image: url(./assets/circulo-gris1.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 400px;
+    z-index: -1;
+}
+
+.circuloAzul{
+    background-image: url(./assets/circulo-azul1.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+    background-position: 320px 0px;
+    opacity: 0.9;
+}
+/* .box .div1 .div2 {
+    width: 100px;
+    height: 300px;
+  } */
+
+.borde{
+    /* border: 1px solid red; */
+}
+.bordeDos{
+    /* border: 1px solid green; */
+    width: 800px;
+}
+.contenido-hero{
+    color: white;
+    margin-top: -14rem;
+    margin-bottom: 10rem;
+    /* border: 1px solid red; */
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.contenido-hero_titulo{
+   display: flex;
+   justify-content: center;
+}
+.espacio{
+    margin-right: 5px;
+}
+.contenido-hero .contenido-hero_cta{
+    border: 1px solid red;
+    width: 70%;
+    text-transform: none!important;
+    font-size:2rem;
+    margin: 0 auto;
+    line-height: 10px;
+}

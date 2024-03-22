@@ -1,6 +1,9 @@
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
-import Navbar from './components/header/Navbar'
+import NavbarDos from './components/header/NavbarDos'
 import Inicio from './pages/1.inicio/inicio'
+import Nosotros from './pages/2.servicios/servicios'
+import Contacto from './pages/3.contacto/contacto'
+import Footer from './components/footer/footer'
 import './App.css'
 
 function App() {
@@ -8,14 +11,17 @@ function App() {
 
   return (
     <>
-    <Navbar />
-    <Inicio />
-    <div className='bg-red-500'>
-      
-      <h1 className="text-3xl font-bold text-yellow-500 underline">
-      Hello world!
-    </h1>
-    </div>
+    <Router>
+      <NavbarDos />
+    <Routes>
+      <Route exact path='/' element={<Inicio />}/>
+      <Route path='/servicios' element={<Nosotros />}/>
+      <Route path='/contacto' element={<Contacto />}/>
+    </Routes>
+    </Router>
+
+    <Footer />
+    
     </>
   )
 }
