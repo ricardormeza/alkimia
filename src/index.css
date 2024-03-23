@@ -60,7 +60,7 @@ body {
     width: 800px;
 }
 .contenido-hero{
-    color: var(--primary-color);
+    color: white;
     margin-top: -17rem;
     margin-bottom: 10rem;
     /* border: 1px solid red; */
@@ -70,6 +70,7 @@ body {
 .contenido-hero_titulo{
    display: flex;
    justify-content: center;
+   
 }
 .espacio{
     margin-right: 5px;

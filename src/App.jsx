@@ -7,10 +7,12 @@ import Proyectos from './pages/5.proyectos/proyectos'
 import Contacto from './pages/3.contacto/contacto'
 import Acento from './pages/6.proyecto/cliente-acento-coffe-roaster'
 import Footer from './components/footer/footer'
+import UseTitle from './hooks/useTitle'
 import './App.css'
 
 function App() {
   // const [count, setCount] = useState(0)
+  // UseTitle({title: 'Pepito'})
 
   return (
     <>

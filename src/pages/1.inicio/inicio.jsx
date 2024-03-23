@@ -3,6 +3,10 @@ import fondoDos from '../../assets/pixel-art-7284052_1280.png'
 import fondoUno from '../../assets/tienda.png'
 import Contacto from '../../components/contacto/contacto';
 import { FaPlus } from "react-icons/fa";
+import UseTitle from '../../hooks/useTitle'
+
+  UseTitle({title: 'Agencia de Mercadotecnia'})
+
 const inicio = () => {
   return (
     <>
@@ -23,7 +27,7 @@ const inicio = () => {
             </div>
             <div className="contenido-hero_cta">
               <h2>Una aleación que logra resultados increíbles</h2>
-              <button className="inline-flex mt-9 items-center justify-center px-5 py-1 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+              <button className="inline-flex mt-9 items-center justify-center px-5 py-1 text-base font-medium text-center text-white hover:text-sky-500 border border-gray-300 rounded-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
                 Contáctanos
               </button>
             </div>
@@ -467,7 +471,7 @@ const inicio = () => {
       <div className="bg-[#425cc7]  py-20 px-6 font-[sans-serif]">
       <div className="container mx-auto text-center">
         <div className="mx-auto text-6xl flex justify-center text-center text-white ">
-          <Link to={`/contacto`} className='hover:scale-150'>
+          <Link to={`/proyectos`} className='hover:scale-150'>
             <FaPlus />
           </Link>
         {/* <button type="button" className="inline-block mt-10 px-6 py-3 bg-red-600 hover:bg-blue-700 text-white text-base font-medium rounded-md">uh</button> */}
