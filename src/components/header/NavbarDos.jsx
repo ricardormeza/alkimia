@@ -9,7 +9,10 @@ import logo from '../../assets/alkimia-logo.webp';
 
 const navigation = [
         { name: "Inicio", href: "/", current: true },
+        { name: "Nosotros", href: "/nosotros", current: false },
         { name: "Servicios", href: "/servicios", current: false },
+        { name: "Proyectos", href: "/proyectos", current: false },
+        // { name: "Proyecto", href: "/cliente/cliente-acento-coffe-roasters", current: false },
         { name: "Contacto", href: "/contacto", current: false },
     ];
 
@@ -17,9 +20,9 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white">
+    <header className="bg-gray-200">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-1 lg:px-8"
+        className="mx-auto flex max-w-7xl pt-5 items-center justify-between p-1 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
