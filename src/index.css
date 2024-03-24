@@ -293,3 +293,27 @@ body {
   background-repeat: no-repeat;
   height: 250px;
 }
+/* PAGINA DE SERVICIOS */
+.grid-servicio{
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  border: 1px solid red;
+}
+.servicios--contenedor-uno{
+  border: 1px solid green;
+  background-image: url(./assets/circulo-gris2.webp);
+  background-size: 510px;
+  background-position: 580px 20px;
+  background-repeat: no-repeat;
+  height: 550px;
+  
+}
+.servicios-circulo-dos{
+  border: 1px solid orange;
+  background-image: url(./assets/circulo-azul1.webp);
+  background-size: 280px;
+  background-position: 910px 60px;
+  background-repeat: no-repeat;
+  height: 350px;
+
+}
