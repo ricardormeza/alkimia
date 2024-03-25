@@ -22,7 +22,8 @@ export default function proyectos() {
     <div className="proyectos-imgs-grid mt-8">
       <div className="proyecto-img-uno">
         <Link to={'/cliente/cliente-acento-coffe-roasters'}>
-          <img src={Imagen} alt="" className='tienda'/>
+          <h2>Acento Coffe Roasters</h2>
+          <img src={Imagen} alt="" />
         </Link>
       </div>
       <div className="proyecto-imgenes-dos">

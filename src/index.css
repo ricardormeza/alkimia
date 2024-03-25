@@ -329,10 +329,22 @@ body {
   grid-template-columns: repeat(2,1fr);
   gap: 1rem;
 }
-.tienda{
+.proyecto-img-uno h2{
+  position: absolute;
+  z-index: 1;
+  margin: 20rem 9rem 0 4rem;
+  font-size: 3rem;
+  color: #425cc7;
+}
+.proyecto-img-uno img{
+  width: auto;
+  height: 1198px;
+  filter: brightness(150%);
+}
+/* .tienda{
   border: 1px solid green;
   height: 1195px;
-}
+} */
 .proyecto-imgenes-dos{
   display: grid;
   grid-template-rows: repeat(2,1fr) ;
