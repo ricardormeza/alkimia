@@ -297,10 +297,10 @@ body {
 .grid-servicio{
   /* display: grid;
   grid-template-columns: repeat(2, 1fr); */
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .servicios--contenedor-uno{
-  border: 1px solid green;
+  /* border: 1px solid green; */
   background-image: url(./assets/circulo-gris2.webp);
   background-size: 510px;
   background-position: 580px 20px;
@@ -309,11 +309,49 @@ body {
   
 }
 .servicios-circulo-dos{
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   background-image: url(./assets/circulo-azul1.webp);
   background-size: 280px;
   background-position: 910px 60px;
   background-repeat: no-repeat;
   height: 350px;
+}
+/* Pagina proyectos */
+.contenedor-proyectos{
+  /* border: 1px solid red; */
+  background-image: url(./assets/textura-puntos1.webp);
+  background-size: 250px;
+  background-position: 910px 10px;
+  background-repeat: no-repeat;
+}
+.proyectos-imgs-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+}
+.tienda{
+  border: 1px solid green;
+  height: 1195px;
+}
+.proyecto-imgenes-dos{
+  display: grid;
+  grid-template-rows: repeat(2,1fr) ;
+  gap:  1rem;
+}
+.proyecto-cuadricula{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+}
 
+/* PROYECTO CAFE ACENTO */
+.cafe-imagen-uno img{
+  /* border: 1px solid red; */
+  height: 500px;
+  width: 100%;
+}
+.cafe-imagen_grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
