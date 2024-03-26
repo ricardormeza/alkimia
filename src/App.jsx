@@ -26,9 +26,9 @@ function App() {
       <Route path='/contacto' element={<Contacto />}/>
       <Route path='/cliente/cliente-acento-coffe-roasters' element={<Acento />}/>
     </Routes>
+      <Footer/>
     </Router>
 
-    <Footer />
     
     </>
   )

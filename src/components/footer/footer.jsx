@@ -1,10 +1,27 @@
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/alkimia-logo.webp';
 
+
 const footer = () => {
+  const [currentYear, setCurrentYear] = useState('');
+
+  useEffect(() => {
+    setCurrentYear(getCurrentYear());
+  }, []);
+
+  const getCurrentYear = () => {
+    return new Date().getFullYear();
+  };
+
+  const handleContactClick = () => {
+    window.location.href = 'mailto:contacto@alkimia.agency';
+  };
   return (
-    <footer className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-slate-950">
-      <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6 ">
-        <div className="md:max-w-md lg:col-span-2 ">
+  <footer className=" bg-slate-950 footi">
+    <div className='max-w-screen-xl px-4 pt-16 mx-auto md:px-24 lg:px-8'>
+      <div className="grid  md:gap-4 sm:gap-0 row-gap-10 mb-8 lg:grid-cols-6 ">
+        <div className="md:max-w-lg lg:col-span-2 ">
           <a
             href="/"
             aria-label="Go home"
@@ -12,70 +29,40 @@ const footer = () => {
             className="inline-flex items-center"
           >
             <img
-              className="h-8 w-auto"
+              className="h-14 w-auto"
               src={logo}
               alt="logo de alkimia agency"
             />
-            {/* <span className="ml-2 text-xl font-bold tracking-wide text-gray-50 uppercase">
-              Company
-            </span> */}
           </a>
           <div className="mt-4 lg:max-w-sm">
-            <p className="text-sm text-gray-50">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.
-            </p>
-            <p className="mt-4 text-sm text-gray-50">
-              Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt explicabo.
-            </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
+        <div className="grid gap-5 row-gap-8 lg:col-span-4 md:grid-cols-[100px_minmax(300px,_1fr)_150px] sm:grid-row-4">
           <div>
-            <p className="font-semibold tracking-wide text-gray-50">
-              Category
-            </p>
+            
             <ul className="mt-2 space-y-2">
               <li>
-                <a
-                  href="/"
-                  className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  News
-                </a>
+                <Link
+                aria-label="Ir a sección nosotros" 
+                className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400">Nosotros</Link>
               </li>
               <li>
-                <a
-                  href="/"
-                  className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  World
-                </a>
+                <Link className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400">Que hacemos</Link>
               </li>
               <li>
-                <a
-                  href="/"
-                  className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  Games
-                </a>
+                <Link className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400">Proyectos</Link>
               </li>
               <li>
-                <a
-                  href="/"
-                  className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  References
-                </a>
+                <Link className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400">Contacto</Link>
               </li>
             </ul>
           </div>
-          <div>
+          {/* <div>
             <p className="font-semibold tracking-wide text-gray-50">
               Business
             </p>
             <ul className="mt-2 space-y-2">
+              <p></p>
               <li>
                 <a
                   href="/"
@@ -117,8 +104,8 @@ const footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             <p className="font-semibold tracking-wide text-gray-50">Apples</p>
             <ul className="mt-2 space-y-2">
               <li>
@@ -162,51 +149,25 @@ const footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
-          <div>
-            <p className="font-semibold tracking-wide text-gray-50">Cherry</p>
+          </div> */}
+          <div className='lg:w-4/5 md:justify-center '>
+            {/* <p className="font-semibold tracking-wide text-gray-50">Cherry</p> */}
             <ul className="mt-2 space-y-2">
+              <p className=' text-white'> Querétaro 2331-4 Col. Madero Sur Tijuana, B.C.
+                México C.P. 22046</p>
               <li>
-                <a
-                  href="/"
-                  className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  Infopreneur
-                </a>
+                <Link to="tel:9876543210" className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"> +51 {'('}664{')'}-211-9491</Link>
               </li>
               <li>
-                <a
-                  href="/"
-                  className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  Personal
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  Wiki
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  Forum
-                </a>
+                <Link to='#'
+                  onClick={handleContactClick}
+                  className="text-gray-100 transition-colors 
+                  duration-300 hover:text-deep-purple-accent-400">contcto@alkimia.agency</Link>
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-      <div className="flex flex-col justify-between pt-5 pb-10 border-t sm:flex-row">
-        <p className="text-sm text-gray-100">
-          © Copyright 2020 Lorem Inc. All rights reserved.
-        </p>
-        <div className="flex items-center mt-4 space-x-4 sm:mt-0">
+          {/* REDES SOCIALES */}
+          <div className="flex items-start justify-center mt-4 space-x-4 sm:mt-0">
           <a
             href="/"
             className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
@@ -233,8 +194,17 @@ const footer = () => {
             </svg>
           </a>
         </div>
+        </div>
       </div>
-    </footer>
+      <div className="flex flex-col items-center pt-5 pb-10 border-t ">
+        <p id='fecha' className="text-sm text-gray-100 text-center">
+          © Copyright {currentYear} Alkimia Inc. All rights reserved.
+        </p>
+        
+      </div>
+    </div>
+  </footer>
+
   )
 }
 

@@ -1,7 +1,7 @@
 export default function contacto() {
   return (
     <section className="my-2">
-      <div className="my-20">
+      <div className="my-20" id="contacto">
         <h2 className="text-5xl py-14 text-[#425cc5] font-extrabold text-center">
           Hablemos de tu proyecto
         </h2>
