@@ -1,5 +1,6 @@
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import NavbarDos from './components/header/NavbarDos'
+import Navbarf from './components/header/Navbarf'
 import Inicio from './pages/1.inicio/inicio'
 import Nosotros from './pages/4.nosotros/nosotros'
 import Servicios from './pages/2.servicios/servicios'
@@ -17,7 +18,7 @@ function App() {
   return (
     <>
     <Router>
-      <NavbarDos />
+      <Navbarf />
     <Routes>
       <Route exact path='/' element={<Inicio />}/>
       <Route path='/nosotros' element={<Nosotros />}/>

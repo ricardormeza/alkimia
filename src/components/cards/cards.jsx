@@ -13,7 +13,7 @@ export default function cards() {
     <>
     <section className="contenedor--cards">
         <section className="text-gray-600 body-font overflow-hidden ">
-          <div className="container px-5 py-24 mx-auto ">
+          <div className="container px-5 sm:py-6 py-24 mx-auto ">
             <div className="flex flex-wrap -m-4 border ">
                 {/* CARD-1 */}
               <div className="p-4 xl:w-1/4 md:w-1/2 w-full ">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/alkimia-logo.webp';
+import logo from '../../assets/Alkimia-logo-blanco.webp';
 
 
 const footer = () => {
