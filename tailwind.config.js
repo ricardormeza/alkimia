@@ -20,10 +20,7 @@ export default {
         "color-gris-2": "var(--color-gris-2)",
         
       },
-      fontFamily: {
-        Roboto: ['Roboto Mono', 'Mono'],
-        Linden: ["Linden Hill"],
-      }
+      
     },
   },
   plugins: [

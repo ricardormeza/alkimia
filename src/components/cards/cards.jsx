@@ -21,7 +21,7 @@ export default function cards() {
                     {/* <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
                       Branding
                     </h2> */}
-                    <h2 className="text-5xl text-gray-900 font-bold pb-4 mb-4 border-b border-gray-200 leading-none">
+                    <h2 className="fuenteTitulo text-5xl text-zinc-500 font-bold pb-4 mb-4 border-b border-gray-200 leading-none">
                       Branding
                     </h2>
                     <p className="flex items-center text-gray-600 mb-2">
@@ -124,7 +124,7 @@ export default function cards() {
                     {/* <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
                       Branding
                     </h2> */}
-                    <h2 className="text-5xl text-gray-900 font-bold pb-4 mb-4 border-b border-gray-200 leading-none">
+                    <h2 className="fuenteTitulo text-5xl text-zinc-500 font-bold pb-4 mb-4 border-b border-gray-200 leading-none">
                       Diseño gráfico
                     </h2>
                     <p className="flex items-center text-gray-600 mb-2">
@@ -216,7 +216,7 @@ export default function cards() {
                     {/* <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
                       Branding
                     </h2> */}
-                    <h2 className="text-5xl text-gray-900 font-bold pb-4 mb-4 border-b border-gray-200 leading-none">
+                    <h2 className="fuenteTitulo text-5xl text-zinc-500 font-bold pb-4 mb-4 border-b border-gray-200 leading-none">
                       Marketing digital
                     </h2>
                     <p className="flex items-center text-gray-600 mb-2">
@@ -289,7 +289,7 @@ export default function cards() {
                     {/* <p className="text-xs text-gray-500 mt-3">
                       Literally you probably haven't heard of them jean shorts.
                     </p> */}
-                  <div className="overlayDos">
+                  <div className="overlay">
                     <div className="text">
                       <h3>Alkimia Agency</h3>
                         <Link to="#" onClick={scrollToContact}>
@@ -308,7 +308,7 @@ export default function cards() {
                     {/* <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
                       Branding
                     </h2> */}
-                    <h2 className="text-5xl text-gray-900 font-bold pb-4 mb-4 border-b border-gray-200 leading-none">
+                    <h2 className="fuenteTitulo text-5xl text-zinc-500 font-bold pb-4 mb-4 border-b border-gray-200 leading-none">
                       Desarrollo Web
                     </h2>
                     <p className="flex items-center text-gray-600 mb-2">
@@ -392,7 +392,7 @@ export default function cards() {
                     {/* <p className="text-xs text-gray-500 mt-3">
                       Literally you probably haven't heard of them jean shorts.
                     </p> */}
-                  <div className="overlayDos">
+                  <div className="overlay">
                     <div className="text">
                     <h3>Alkimia Agency</h3>
                       <Link to="#" onClick={scrollToContact}>

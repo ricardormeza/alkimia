@@ -1,12 +1,13 @@
+import {Helmet} from "react-helmet";
 import { Link } from 'react-router-dom';
 import fondoDos from '../../assets/pixel-art-7284052_1280.png'
 import fondoUno from '../../assets/tienda.png'
 import Contacto from '../../components/contacto/contacto';
 import { FaPlus } from "react-icons/fa";
-import UseTitle from '../../hooks/useTitle'
+// import UseTitle from '../../hooks/useTitle'
 import Cards from '../../components/cards/cards';
 
-  UseTitle({title: 'Agencia de Mercadotecnia'})
+  // UseTitle({title: 'Agencia de Mercadotecnia'})
 
   const scrollToContact = () => {
     const contactSection = document.getElementById('contacto');
@@ -18,6 +19,11 @@ import Cards from '../../components/cards/cards';
 const inicio = () => {
   return (
     <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>Alkimia | Agencia de Mercadotecnia</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+    </Helmet>
     <div className="contenedor ">
       <section className=" mx-auto py-12 md:py-6">
         <div className=" box">
@@ -29,13 +35,13 @@ const inicio = () => {
           </div>
           {/* texto de hero */}
           <div className="contenido-hero">
-            <div className="contenido-hero_titulo">
+            <div className="contenido-hero_titulo ">
               <p className="espacio">Esto es </p>
               <p>&#32;</p>
               <h1> ALKIMIA</h1>
             </div>
             <div className="contenido-hero_cta">
-              <h2>Una aleación que logra resultados increíbles</h2>
+              <h2 className="fuenteTitulo">Una aleación que logra resultados increíbles</h2>
               <Link to="#" onClick={scrollToContact}>
                 <button className="inline-flex mt-9 items-center justify-center px-5 py-1 text-base font-medium text-center text-white hover:text-sky-500 border border-gray-300 rounded-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
                   Contáctanos
@@ -48,7 +54,7 @@ const inicio = () => {
       <section className="mx-auto py-2 md:py-0">
         <div className="mx-auto titulo--de_subtitulo">
           <div className="subtitulo"></div>
-          <h2 className="subtituto--heading font-Linden pb-4">
+          <h2 className="subtituto--heading fuenteTitulo pb-4">
             Una agencia de marketing digital especializada en resultados.
           </h2>
         </div>
@@ -70,8 +76,8 @@ const inicio = () => {
       <section className="">
         {/* SECCIÓN CARDS FIN */}
         {/* PROYECTOS INICIO */}
-        <div className="flex flex-col text-center w-full mb-20">
-          <h2 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900 titulo--proyectos">
+        <div className="flex flex-col text-center w-full my-20">
+          <h2 className="fuenteTitulo sm:text-5xl text-5xl font-medium title-font mb-2 text-[#425cc7] titulo--proyectos">
             Nuestros proyectos
           </h2>
         </div>

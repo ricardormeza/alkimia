@@ -1,18 +1,25 @@
-import Cuadro from '../../assets/textura-puntos1.webp'
+import {Helmet} from "react-helmet";
+// import Cuadro from '../../assets/textura-puntos1.webp'
 import Imagen from "../../assets/tienda.png";
 import Cards from '../../components/cards/cards';
 import Contacto from '../../components/contacto/contacto';
 
 export default function nosotros() {
   return (
-    <section className=''>
+    <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>Alkimia | Nosotros</title>
+        <meta name="description" content="nosotros" />
+        <link rel="canonical" href="http://mysite.com/example" />
+    </Helmet>
       <section className="text-gray-600 body-font contenedor">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font sm:text-2xl text-3xl mb-4 font-medium text-gray-900">
+            <h1 id="nosotros" className="fuenteTitulo sm:text-2xl text-3xl mb-4 font-medium text-gray-900">
               Nosotros
             </h1>
-            <h2 className="title-font sm:text-4xl text-3xl mb-4 font-extrabold text-[#425cc5]">
+            <h2 className="fuenteTitulo sm:text-4xl text-3xl mb-4 font-extrabold text-[#425cc5]">
               Somos una agencia de branding y marketing digital ubicada
               orgullosamente en la esquina de México, Tijuana B.C.
             </h2>
@@ -40,28 +47,23 @@ export default function nosotros() {
         </div>
       </section>
       {/* seccion-dos inicio */}
-      <div className="container mx-auto contenedor-circulo">
-        <div className="contenedor-cirlculo-uno">
+      <div className=" mx-auto contenedor-circulo">
+        <div className="contenedor contenedor-cirlculo-uno">
           <h2 className="title-font sm:text-2xl text-left text-3xl  font-medium text-gray-900">
             Nuestro proceso
           </h2>
           <h3 className="title-font sm:text-4xl text-left text-7xl mb-4 font-extrabold text-[#425cc5]">
             This is how
-            <br className="hidden lg:inline-block text-7xl" />
+            <br className=" sm:inline-block text-7xl" />
             we do it
           </h3>
           <div className="contenedor-circulo-uno-imagenes">
-            {/* <img
-                className="textura"
-                alt="hero"
-                src={Cuadro}
-              /> */}
             <div className="imagen-gris"></div>
             <div className="imagen-textura"></div>
           </div>
         </div>
-        <div className="contenedor-circulo-dos">
-          <h2>Desarrollo</h2>
+        <div className="contenedor-circulo-dos grid">
+          <h2 className="place-self-center ">Desarrollo</h2>
           <p>
             Tenemos nuestra propia historia y experiencias compuestas por
             personas y elementos que hoy constituyen un todo.
@@ -87,6 +89,6 @@ export default function nosotros() {
       {/* INICIO Contacto */}
       <Contacto />
       {/* INICIO Contacto fin */}
-    </section>
+    </>
   );
 }

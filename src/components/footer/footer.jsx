@@ -2,8 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/Alkimia-logo-blanco.webp';
 
+const navigation = [
+  
+  { name: "Nosotros", href: "/nosotros", current: false },
+  { name: "Servicios", href: "/servicios", current: false },
+  { name: "Proyectos", href: "/proyectos", current: false },
+  { name: "Contacto", href: "/contacto", current: false },
+];
 
 const footer = () => {
+  const [open, setOpen] = useState(false);
   const [currentYear, setCurrentYear] = useState('');
 
   useEffect(() => {
@@ -17,6 +25,28 @@ const footer = () => {
   const handleContactClick = () => {
     window.location.href = 'mailto:contacto@alkimia.agency';
   };
+
+  // navegaciontop
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    if (!clicked) {
+      // Si es el primer clic, lleva al principio de la página seleccionada
+      setClicked(true);
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    } else {
+      // Si no es el primer clic, lleva al principio de la página en general
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    }
+  }
+
+
   return (
   <footer className=" bg-slate-950 footi">
     <div className='max-w-screen-xl px-4 pt-16 mx-auto md:px-24 lg:px-8'>
@@ -41,115 +71,20 @@ const footer = () => {
           <div>
             
             <ul className="mt-2 space-y-2">
-              <li>
+              <li className='flex flex-col'>
+              {navigation.map((item) => (
                 <Link
+                key={item.name}
+                to={item.href}
+                onClick={handleClick}
                 aria-label="Ir a sección nosotros" 
-                className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400">Nosotros</Link>
+                className="text-gray-100 transition-colors mb-2 duration-300 hover:text-deep-purple-accent-400">{item.name}</Link>
+
+              ))}
               </li>
-              <li>
-                <Link className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400">Que hacemos</Link>
-              </li>
-              <li>
-                <Link className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400">Proyectos</Link>
-              </li>
-              <li>
-                <Link className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400">Contacto</Link>
-              </li>
+              
             </ul>
           </div>
-          {/* <div>
-            <p className="font-semibold tracking-wide text-gray-50">
-              Business
-            </p>
-            <ul className="mt-2 space-y-2">
-              <p></p>
-              <li>
-                <a
-                  href="/"
-                  className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  Web
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  eCommerce
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  Business
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  Entertainment
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  Portfolio
-                </a>
-              </li>
-            </ul>
-          </div> */}
-          {/* <div>
-            <p className="font-semibold tracking-wide text-gray-50">Apples</p>
-            <ul className="mt-2 space-y-2">
-              <li>
-                <a
-                  href="/"
-                  className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  Media
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  Brochure
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  Nonprofit
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  Educational
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  className="text-gray-100 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                >
-                  Projects
-                </a>
-              </li>
-            </ul>
-          </div> */}
           <div className='lg:w-4/5 md:justify-center '>
             {/* <p className="font-semibold tracking-wide text-gray-50">Cherry</p> */}
             <ul className="mt-2 space-y-2">
