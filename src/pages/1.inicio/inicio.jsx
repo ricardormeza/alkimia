@@ -1,5 +1,6 @@
 import {Helmet} from "react-helmet";
 import { Link } from 'react-router-dom';
+import Animat from '../../components/animat/animat'
 import fondoDos from '../../assets/pixel-art-7284052_1280.png'
 import fondoUno from '../../assets/tienda.png'
 import Contacto from '../../components/contacto/contacto';
@@ -24,16 +25,18 @@ const inicio = () => {
         <title>Alkimia | Agencia de Mercadotecnia</title>
         <link rel="canonical" href="http://mysite.com/example" />
     </Helmet>
+    <Animat />
     <div className="contenedor ">
-      <section className=" mx-auto py-12 md:py-6">
+      {/* contenedor de dos imagenes viejo inicio */}
+      {/* <section className=" mx-auto py-12 md:py-6">
         <div className=" box">
           <div className="div1 borde circuloGris">
-            {/* <img src={circuloGris} alt="imagen uno" className='uno' /> */}
+            
             <div className="div2 bordeDos circuloAzul">
-              {/* <img src={ciruloAzul} alt="imagen dos" /> */}
+              
             </div>
           </div>
-          {/* texto de hero */}
+          
           <div className="contenido-hero">
             <div className="contenido-hero_titulo ">
               <p className="espacio">Esto es </p>
@@ -50,7 +53,8 @@ const inicio = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      {/* contenedor de dos imagenes viejo FIN */}
       <section className="mx-auto py-2 md:py-0">
         <div className="mx-auto titulo--de_subtitulo">
           <div className="subtitulo"></div>

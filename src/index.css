@@ -661,7 +661,7 @@ body {
   width: 100%!important;
 }
 
-/* animaciones hero index css */
+/* ANIMACIONES hero index css */
 .image-container {
   /* height: 500px; */
   width: 900px;
@@ -772,6 +772,156 @@ body {
   opacity: 0.7;
 }
 .animacionGris > img{
+}
+
+
+/******************* ANIMACION HEROGIF *******************/
+.gifs-centrados{
+  display: flex;
+  justify-content: center;
+}
+.contenedor-hero-gifs{
+  /* border: 1px solid yellow; */
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
+  gap: 0;
+}
+
+.contenedor-hero-gifs:hover{
+  animation: moveUpDown 2s infinite alternate;
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px); /* Cambia a translateY(20px) para mover hacia abajo */
+  }
+}
+.play-on-hover{
+  width: 631px;
+  height: 550px;
+  background-image: url(../src/assets/circulo-inicio-gray.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 80px 0px;
+  /* clip-path: circle(50% at 50% 50%); */
+  /* border: 1px solid red; */
+}
+@media (max-width:500px){
+  .play-on-hover{
+      background-position: 0px 0px;
+      background-image: url(../src/assets/circulo-fusion-alkimia.gif);
+      width: 240px!important;
+      height: 240px!important;
+    }
+  }
+@media (max-width:810px){
+  .play-on-hover{
+      width: 431px;
+      height: 330px;
+    }
+  }
+
+.play-on-hover:hover{
+  background-image: url(../src/assets/circulo-fusion-alkimia.gif);
+}
+.marginado{
+  margin-left: -200px;
+}
+@media (max-width:500px){
+  .marginado{
+      margin-left: -100px;
+    }
+  }
+.imgAzul{
+  height: 600px;
+  width: 600px;
+  opacity: .9;
+  position: relative;
+  bottom: 2rem;
+}
+@media (max-width:500px){
+  .imgAzul{
+      width: 231px!important;
+      height: 230px!important;
+    }
+}
+@media (max-width:810px){
+  .imgAzul{
+      width: 431px;
+      height: 430px;
+      bottom: 0;
+    }
+}
+
+
+
+.azul-gif{
+  height: 500px;
+  width: 500px;
+  background-image: url(../src/assets/circulo-azul1.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-color: rgba(66, 92, 199, .9); */
+  /* border-radius: 50%; */
+  display: inline-block;
+  /* border: 1px solid green; */
+}
+
+.contenido-heroA{
+  color: white;
+  margin-top: -32rem;
+  margin-bottom: 25rem;
+  /* border: 1px solid red; */
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width:500px){
+  .contenido-heroA{
+      margin-top: -20rem!important;
+      margin-bottom: 8rem!important;
+    }
+}
+@media (max-width:810px){
+  .contenido-heroA{
+      margin-top: -26rem;
+      margin-bottom: 10rem;
+    }
+}
+@media (max-width:500px){
+  .contenido-heroA{
+      margin-bottom: 0;
+  }
+}
+.contenido-hero_tituloA{
+ display: flex;
+ justify-content: center;
+
+}
+.espacio{
+  margin-right: 5px;
+}
+.contenido-heroA .contenido-hero_ctaA{
+  /* border: 1px solid red; */
+  width: 70%;
+  text-transform: none!important;
+  font-size:3rem;
+  margin: 0 auto;
+  line-height: 2.7rem;
+}
+@media (max-width:500px){
+  .contenido-heroA .contenido-hero_ctaA{
+      font-size: 2.5rem;
+  }
+  .contenido-hero_ctaA button{
+    background-color: #425cc7;
+  }
 }
 
 /* NAVBAR MENU  */

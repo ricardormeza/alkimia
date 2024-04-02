@@ -4,14 +4,15 @@ import ImagenTres from '../../assets/tienda.png'
 import ImagenCuatro from '../../assets/pixel-art-7284052_1280.png'
 import ImagenCinco from '../../assets/dos.webp'
 import ImagenSeis from '../../assets/uno.webp'
-import Contacto from '../../components/contacto/contacto'
-import { MdLocalPhone } from "react-icons/md";
+import Animat from '../../components/animat/animat'
+
 
 
 
 const contacto = () => {
   return (
     <>
+    {/* <Animat /> */}
     {/* HERO SECTION INICIO */}
     <section className="text-gray-600 body-font">
       <div className="container mx-auto flex px-5 items-center justify-center flex-col">
