@@ -11,8 +11,8 @@ const contacto = () => {
   return (
     <>
     <section className="text-gray-600 body-font relative">
-      {/* IMAGENES INICIO */}
-      <div className="contenedor py-10 px-10 mb-5 image-container">
+      {/* IMAGENES ANIMADAS INICIO */}
+      {/* <div className="contenedor py-10 px-10 mb-5 image-container">
         <div className="imagenes-animacion-uno">
           <img src={ImagenUno} alt="Imagen 1" className="image" />
           <img src={ImagenDos} alt="Imagen 1" className="image" />
@@ -24,12 +24,40 @@ const contacto = () => {
         <div className="imagen-animacion-circulo">
           <img src={ImagenDos} alt="Imagen 1" className="animacionGris" />
         </div>
-      </div>
-        <div className="image-container_texto">
+      </div> */}
+        {/* <div className="image-container_texto">
           <h2>Texto</h2>
-        </div>
+        </div> */}
+        {/* CONTENEDOR DE ANIMACION GIF FIN */}
 
       {/* IMAGENES FIN */}
+
+      {/* MAPA INICIO */}
+      <section className="text-gray-600 body-font">
+        <div className="container mx-auto flex px-5 py-12 items-center justify-center flex-col">
+        <iframe
+            width="100%"
+            height="100%"
+            className="lg:w-4/6 md:w-4/6 w-5/6 min-h-80 mb-10 object-cover object-center rounded"
+            frameBorder="0"
+            title="map"
+            marginHeight="0"
+            marginWidth="0"
+            scrolling="no"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.2671185151313!2d-117.0255449!3d32.5207056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d949ae6473f6d5%3A0xc0579d4e9205faa9!2sAlkimia%20publicidad!5e0!3m2!1ses!2smx!4v1649284304572!5m2!1ses!2smx"
+            
+          ></iframe>
+          
+        </div>
+      </section>
+
+
+
+
+
+
+
+
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
