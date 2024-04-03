@@ -1,3 +1,4 @@
+
 // import ImagenUno from '../../assets/circulo-azul1.webp'
 // import ImagenDos from '../../assets/circulo-gris1.webp'
 // import ImagenTres from '../../assets/tienda.png'
@@ -12,6 +13,7 @@ import ImagenCuatro from '../../assets/pixel-art-7284052_1280.png'
 const contacto = () => {
   return (
     <>
+    
     {/* <Animat /> */}
     {/* HERO SECTION INICIO */}
     <section className="text-gray-600 body-font">
@@ -292,6 +294,7 @@ const contacto = () => {
       </section>
       {/* MAPA FIN */}
     </section>
+    
     </>
   )
 }

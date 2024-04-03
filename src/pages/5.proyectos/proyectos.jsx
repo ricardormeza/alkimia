@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
-import React from 'react'
+
+
 import Imagen from '../../assets/pixel-art-7284052_1280.png'
 
 export default function proyectos() {
   return (
     <>
+    
     <main className='pt-14 pb-20'>
       <div className="contenedor contenedor-proyectos">
         <div className="proyecto-cuadro">

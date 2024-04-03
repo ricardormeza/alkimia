@@ -1,3 +1,4 @@
+
 import Contacto from '../../components/contacto/contacto';
 import Imagen from '../../assets/pixel-art-7284052_1280.png'
 

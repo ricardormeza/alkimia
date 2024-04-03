@@ -1,3 +1,4 @@
+
 import {Helmet} from "react-helmet";
 import { Link } from 'react-router-dom';
 // import Animat from '../../components/animat/Animat'
@@ -8,6 +9,7 @@ import { FaPlus } from "react-icons/fa";
 // import UseTitle from '../../hooks/useTitle'
 import Cards from '../../components/cards/cards';
 import HeroGift from '../../components/HeroGift/HeroGift'
+
 
   // UseTitle({title: 'Agencia de Mercadotecnia'})
 
@@ -21,6 +23,7 @@ import HeroGift from '../../components/HeroGift/HeroGift'
 const inicio = () => {
   return (
     <>
+    
     <Helmet>
         <meta charSet="utf-8" />
         <title>Alkimia | Agencia de Mercadotecnia</title>
@@ -113,6 +116,7 @@ const inicio = () => {
       </section>
       <Contacto />
       </div>
+      
     </>
   );
 };
