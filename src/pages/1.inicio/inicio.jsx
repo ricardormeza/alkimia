@@ -1,6 +1,6 @@
 import {Helmet} from "react-helmet";
 import { Link } from 'react-router-dom';
-import Animat from '../../components/animat/animat'
+import Animat from '../../components/animat/Animat'
 import fondoDos from '../../assets/pixel-art-7284052_1280.png'
 import fondoUno from '../../assets/tienda.png'
 import Contacto from '../../components/contacto/contacto';

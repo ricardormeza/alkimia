@@ -1,10 +1,10 @@
-import ImagenUno from '../../assets/circulo-azul1.webp'
-import ImagenDos from '../../assets/circulo-gris1.webp'
-import ImagenTres from '../../assets/tienda.png'
+// import ImagenUno from '../../assets/circulo-azul1.webp'
+// import ImagenDos from '../../assets/circulo-gris1.webp'
+// import ImagenTres from '../../assets/tienda.png'
 import ImagenCuatro from '../../assets/pixel-art-7284052_1280.png'
-import ImagenCinco from '../../assets/dos.webp'
-import ImagenSeis from '../../assets/uno.webp'
-import Animat from '../../components/animat/animat'
+// import ImagenCinco from '../../assets/dos.webp'
+// import ImagenSeis from '../../assets/uno.webp'
+// import Animat from '../../components/animat/animat'
 
 
 

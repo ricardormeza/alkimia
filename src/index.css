@@ -160,7 +160,26 @@ body {
 .contenedor--cards{
   /* border: 1px solid green; */
 }
-
+.img-fija{
+  background-image: url(../src/assets/tienda.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.img-fija:hover{
+  /* background-image: url(../src/assets/card-branding-alkimia.gif); */
+  background-image: none;
+  background-color: red;
+  height: 100%;
+}
+/* .img-gifi{
+  background-color: yellow;
+  height: 100%;
+  background-image: url(../src/assets/card-branding-alkimia.gif);
+}
+.img-gifi:hover{
+} */
 .efecto{
   position: relative;
   width: 100%;
@@ -171,7 +190,7 @@ body {
   bottom: 0%;
   left: 0;
   right: 0;
-  background-color: #425cc7;
+  background-color: rgba(66, 92, 199, .8);
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -181,7 +200,9 @@ body {
   bottom: 0;
   top: 0;
   height: 100%;
+  
 }
+
 .overlayDos {
   position: absolute;
   top: 0;
@@ -789,18 +810,6 @@ body {
   justify-items: center;
   gap: 0;
 }
-
-.contenedor-hero-gifs:hover{
-  animation: moveUpDown 2s infinite alternate;
-}
-@keyframes moveUpDown {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-20px); /* Cambia a translateY(20px) para mover hacia abajo */
-  }
-}
 .play-on-hover{
   width: 631px;
   height: 550px;
@@ -836,7 +845,18 @@ body {
   .marginado{
       margin-left: -100px;
     }
+}
+.marginado:hover{
+  animation: moveUpDown 2s infinite alternate;
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
   }
+  100% {
+    transform: translateY(-20px); 
+  }
+}
 .imgAzul{
   height: 600px;
   width: 600px;
