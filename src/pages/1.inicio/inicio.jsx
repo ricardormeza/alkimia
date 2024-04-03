@@ -7,7 +7,7 @@ import Contacto from '../../components/contacto/contacto';
 import { FaPlus } from "react-icons/fa";
 // import UseTitle from '../../hooks/useTitle'
 import Cards from '../../components/cards/cards';
-import Animat from "../../components/animat/Animat";
+import HeroGift from '../../components/HeroGift/HeroGift'
 
   // UseTitle({title: 'Agencia de Mercadotecnia'})
 
@@ -26,7 +26,7 @@ const inicio = () => {
         <title>Alkimia | Agencia de Mercadotecnia</title>
         <link rel="canonical" href="http://mysite.com/example" />
     </Helmet>
-    <Animat />
+    <HeroGift />
     <div className="contenedor ">
       {/* contenedor de dos imagenes viejo inicio */}
       {/* <section className=" mx-auto py-12 md:py-6">
