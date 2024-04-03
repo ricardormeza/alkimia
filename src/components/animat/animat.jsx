@@ -13,32 +13,6 @@ const scrollToContact = () => {
 
 export default function Animat() {
 
-  const [lastScrollTop, setLastScrollTop] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      if (scrollTop > lastScrollTop) {
-        // Scroll hacia abajo
-        document.getElementById('moviendo').style.top = `-${scrollTop}px`;
-      } else {
-        // Scroll hacia arriba
-        document.getElementById('moviendo').style.top = `calc(-${scrollTop}px + 100%)`;
-      }
-      // Actualizar la última posición de scroll
-      setLastScrollTop(scrollTop);
-    };
-  
-    // Agregar el event listener cuando el componente se monta
-    window.addEventListener('scroll', handleScroll);
-    // Remover el event listener cuando el componente se desmonta
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [lastScrollTop]);
-
-
-
   return (
     <>
       <section className="contenedor py-24 gifs-centrados ">
