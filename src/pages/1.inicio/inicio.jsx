@@ -1,12 +1,13 @@
 import {Helmet} from "react-helmet";
 import { Link } from 'react-router-dom';
-import Animat from '../../components/animat/Animat'
+// import Animat from '../../components/animat/Animat'
 import fondoDos from '../../assets/pixel-art-7284052_1280.png'
 import fondoUno from '../../assets/tienda.png'
 import Contacto from '../../components/contacto/contacto';
 import { FaPlus } from "react-icons/fa";
 // import UseTitle from '../../hooks/useTitle'
 import Cards from '../../components/cards/cards';
+import Animat from "../../components/animat/Animat";
 
   // UseTitle({title: 'Agencia de Mercadotecnia'})
 
