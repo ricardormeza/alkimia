@@ -2,7 +2,6 @@ import {Helmet} from "react-helmet";
 import Contacto from '../../components/contacto/contacto';
 import Cards from '../../components/cards/cards';
 
-
 const servicios = () => {
   return (
     <>
@@ -44,7 +43,6 @@ const servicios = () => {
     {/* HERO FIN */}
     <Cards />
     <Contacto />
-    
     </>
   )
 }

@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-    <AnimatePresence>
+    <AnimatePresence mode='wait'>
       <Suspense fallback={<h2>Cargando...</h2>}>
       <Router>
         <Navbarf />

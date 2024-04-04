@@ -4,9 +4,11 @@ import Imagen from "../../assets/tienda.png";
 import Cards from '../../components/cards/cards';
 import Contacto from '../../components/contacto/contacto';
 
+
 export default function nosotros() {
   return (
     <>
+    
     <Helmet>
         <meta charSet="utf-8" />
         <title>Alkimia | Nosotros </title>
