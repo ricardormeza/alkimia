@@ -23,11 +23,20 @@ import HeroGift from '../../components/HeroGift/HeroGift'
 const inicio = () => {
   return (
     <>
-    
     <Helmet>
         <meta charSet="utf-8" />
         <title>Alkimia | Agencia de Mercadotecnia</title>
-        <link rel="canonical" href="http://mysite.com/example" />
+        <link rel="canonical" href="https://alkimia.agency" />
+        <meta name="description" content="Expertos en mercadotecnia ofreciendo diseño web, branding, marketing digital y diseño gráfico para potenciar tu negocio. ¡Destaca con Alkimia Agency!" />
+        <meta name="author" content="Alkimia Agency"/>
+        <meta name="robots" content="index, follow"/>
+        <meta property="og:type" content="business.business"/>
+        <meta property="og:title" content="Alkimia | Agencia de Mercadotecnia"/>
+        <meta property="og:url" content="https://alkimia.agency"/>
+        <meta property="business:contact_data:street_address" content="Queretaro 2331 - 4 Col.  Madero Sur"/>
+        <meta property="business:contact_data:locality" content="Tijuana"/>
+        <meta property="business:contact_data:region" content="Baja California"/>
+        <meta property="business:contact_data:country_name" content="Mexico"/>
     </Helmet>
     <HeroGift />
     <div className="contenedor ">

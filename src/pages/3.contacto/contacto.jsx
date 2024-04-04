@@ -1,11 +1,6 @@
-
-// import ImagenUno from '../../assets/circulo-azul1.webp'
-// import ImagenDos from '../../assets/circulo-gris1.webp'
-// import ImagenTres from '../../assets/tienda.png'
+import {Helmet} from "react-helmet";
 import ImagenCuatro from '../../assets/pixel-art-7284052_1280.png'
-// import ImagenCinco from '../../assets/dos.webp'
-// import ImagenSeis from '../../assets/uno.webp'
-// import Animat from '../../components/animat/animat'
+
 
 
 
@@ -13,8 +8,21 @@ import ImagenCuatro from '../../assets/pixel-art-7284052_1280.png'
 const contacto = () => {
   return (
     <>
-    
-    {/* <Animat /> */}
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>Alkimia | Contacto</title>
+        <link rel="canonical" href="https://alkimia.agency/contacto" />
+        <meta name="description" content="¡Conéctate con nuestra agencia de mercadotecnia para potenciar tu presencia en línea! Contáctanos hoy para servicios de diseño web, branding, marketing digital y diseño gráfico personalizados." />
+        <meta name="author" content="Alkimia Agency"/>
+        <meta name="robots" content="index, follow"/>
+        <meta property="og:type" content="business.business"/>
+        <meta property="og:title" content="Alkimia | Contacto"/>
+        <meta property="og:url" content="https://alkimia.agency/contacto"/>
+        <meta property="business:contact_data:street_address" content="Queretaro 2331 - 4 Col.  Madero Sur"/>
+        <meta property="business:contact_data:locality" content="Tijuana"/>
+        <meta property="business:contact_data:region" content="Baja California"/>
+        <meta property="business:contact_data:country_name" content="Mexico"/>
+    </Helmet>
     {/* HERO SECTION INICIO */}
     <section className="text-gray-600 body-font">
       <div className="container mx-auto flex px-5 items-center justify-center flex-col">

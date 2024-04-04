@@ -9,9 +9,18 @@ export default function nosotros() {
     <>
     <Helmet>
         <meta charSet="utf-8" />
-        <title>Alkimia | Nosotros</title>
-        <meta name="description" content="nosotros" />
-        <link rel="canonical" href="http://mysite.com/example" />
+        <title>Alkimia | Nosotros </title>
+        <link rel="canonical" href="https://alkimia.agency/nosotros" />
+        <meta name="description" content="Conoce nuestra agencia de mercadotecnia especializada en diseño web, branding, marketing digital y diseño gráfico. ¡Descubre quiénes somos y cómo podemos ayudarte!." />
+        <meta name="author" content="Alkimia Agency"/>
+        <meta name="robots" content="index, follow"/>
+        <meta property="og:type" content="business.business"/>
+        <meta property="og:title" content="Alkimia | Nosotros"/>
+        <meta property="og:url" content="https://alkimia.agency/nosotros"/>
+        <meta property="business:contact_data:street_address" content="Queretaro 2331 - 4 Col.  Madero Sur"/>
+        <meta property="business:contact_data:locality" content="Tijuana"/>
+        <meta property="business:contact_data:region" content="Baja California"/>
+        <meta property="business:contact_data:country_name" content="Mexico"/>
     </Helmet>
       <section className="text-gray-600 body-font contenedor">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">

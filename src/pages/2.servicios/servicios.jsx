@@ -1,4 +1,4 @@
-
+import {Helmet} from "react-helmet";
 import Contacto from '../../components/contacto/contacto';
 import Cards from '../../components/cards/cards';
 
@@ -6,7 +6,21 @@ import Cards from '../../components/cards/cards';
 const servicios = () => {
   return (
     <>
-    
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>Alkimia | Servicios</title>
+        <link rel="canonical" href="https://alkimia.agency/servicios" />
+        <meta name="description" content="Descubre nuestros servicios de diseño web, branding, marketing digital y diseño gráfico. Impulsa tu marca con nuestra agencia de mercadotecnia líder." />
+        <meta name="author" content="Alkimia Agency"/>
+        <meta name="robots" content="index, follow"/>
+        <meta property="og:type" content="business.business"/>
+        <meta property="og:title" content="Alkimia | Contacto"/>
+        <meta property="og:url" content="https://alkimia.agency/servicios"/>
+        <meta property="business:contact_data:street_address" content="Queretaro 2331 - 4 Col.  Madero Sur"/>
+        <meta property="business:contact_data:locality" content="Tijuana"/>
+        <meta property="business:contact_data:region" content="Baja California"/>
+        <meta property="business:contact_data:country_name" content="Mexico"/>
+    </Helmet>
     {/* HERO INCIO */}
     <div className="contenedor grid-servicio md:pb-40 md:py-16">
       <div className="servicios--contenedor-uno">

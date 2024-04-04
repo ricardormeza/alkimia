@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import {Helmet} from "react-helmet";
 
 
 import Imagen from '../../assets/pixel-art-7284052_1280.png'
@@ -6,7 +7,21 @@ import Imagen from '../../assets/pixel-art-7284052_1280.png'
 export default function proyectos() {
   return (
     <>
-    
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>Alkimia | Proyectos </title>
+        <link rel="canonical" href="https://alkimia.agency/proyectos" />
+        <meta name="description" content="Explora nuestros proyectos en diseño web, branding, marketing digital y diseño gráfico. Descubre cómo hemos ayudado a nuestros clientes a destacarse en línea." />
+        <meta name="author" content="Alkimia Agency"/>
+        <meta name="robots" content="index, follow"/>
+        <meta property="og:type" content="business.business"/>
+        <meta property="og:title" content="Alkimia | Proyectos"/>
+        <meta property="og:url" content="https://alkimia.agency/proyectos"/>
+        <meta property="business:contact_data:street_address" content="Queretaro 2331 - 4 Col.  Madero Sur"/>
+        <meta property="business:contact_data:locality" content="Tijuana"/>
+        <meta property="business:contact_data:region" content="Baja California"/>
+        <meta property="business:contact_data:country_name" content="Mexico"/>
+    </Helmet>
     <main className='pt-14 pb-20'>
       <div className="contenedor contenedor-proyectos">
         <div className="proyecto-cuadro">
