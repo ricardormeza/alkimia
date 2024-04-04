@@ -33,8 +33,8 @@ export default function Navbarf() {
       height: 0,
       transition: {
         ease: "easeInOut",
-        duration: 0.25,
-        delay: 1.2,
+        duration: 0.15,
+        delay: 0.7,
       },
     },
   };

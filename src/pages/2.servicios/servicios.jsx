@@ -1,8 +1,33 @@
 import {Helmet} from "react-helmet";
 import Contacto from '../../components/contacto/contacto';
 import Cards from '../../components/cards/cards';
+import { motion } from "framer-motion";
 
 const servicios = () => {
+  // Animación
+  const anim = (variants) => {
+    return {
+      initial: "initial",
+      animate: "enter",
+      exit: "exit",
+      variants,
+    };
+  };
+
+  const opacity = {
+    initial: {
+      opacity: 0,
+    },
+    enter: {
+      opacity: 1,
+      transition: {
+        duration: 2,
+      },
+    },
+    exit: {
+      opacity: 1,
+    },
+  };
   return (
     <>
     <Helmet>
@@ -20,6 +45,7 @@ const servicios = () => {
         <meta property="business:contact_data:region" content="Baja California"/>
         <meta property="business:contact_data:country_name" content="Mexico"/>
     </Helmet>
+    <motion.div {...anim(opacity)}>
     {/* HERO INCIO */}
     <div className="contenedor grid-servicio md:pb-40 md:py-16">
       <div className="servicios--contenedor-uno">
@@ -43,6 +69,7 @@ const servicios = () => {
     {/* HERO FIN */}
     <Cards />
     <Contacto />
+    </motion.div>
     </>
   )
 }

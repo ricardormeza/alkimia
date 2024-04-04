@@ -809,6 +809,7 @@ body {
   grid-template-columns: repeat(2,1fr);
   justify-items: center;
   gap: 0;
+  z-index: -2;
 }
 .play-on-hover{
   width: 631px;
@@ -1018,4 +1019,14 @@ header .menu {
   z-index: 2;
   cursor: pointer;
   font-size: 18px;
+}
+/* ************FRAMER MOTION  ANIMATIONS********** */
+.inner .slide{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #425cc7;
+  width: 100%!important;
+  height: 100%;
+  z-index: 999;
 }
