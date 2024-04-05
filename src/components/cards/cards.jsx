@@ -21,8 +21,8 @@ export default function cards() {
               <div className="p-1 xl:w-1/4 md:w-1/2 w-full ">
                 <div className="h-full rounded-none border-2 border-gray-300 flex flex-col relative overflow-hidden efecto">
                     {/* <img src={CardGifUno} className="card-gif" alt="" /> */}
-                    <div className="img-fija"></div>
-                      <div className="img-gifi"></div>
+                    {/* <div className="img-fija"></div>
+                      <div className="img-gifi"></div> */}
                     {/* <h2 className="fuenteTitulo text-5xl text-zinc-500 font-bold pb-4 mb-4 border-b border-gray-200 leading-none">
                       Branding
                     </h2> */}

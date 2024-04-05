@@ -163,39 +163,45 @@ const inicio = () => {
           {/* SECCION CARDS INICIO */}
           <Cards />
           <section className="">
-            {/* SECCIÓN CARDS FIN */}
+          {/* SECCIÓN CARDS FIN */}
             {/* PROYECTOS INICIO */}
-            <div className="flex flex-col text-center w-full my-20">
+            <div className="contenedor flex flex-col text-center w-full my-20">
               <h2 className="fuenteTitulo sm:text-5xl text-5xl font-medium title-font mb-2 text-[#425cc7] titulo--proyectos">
                 Nuestros proyectos
               </h2>
             </div>
-            <div className="max-w-max  w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-              <img
-                alt="feature"
-                className="object-cover object-center h-full w-full"
-                src={fondoUno}
-              />
-            </div>
-            <div className="max-w-max  w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-              <img
-                alt="feature"
-                className="object-cover object-center h-full w-full"
-                src={fondoDos}
-              />
-            </div>
-            <div className="max-w-max  w-full mb-10 lg:mb-0 rounded-lg overflow-hidden ">
-              <img
-                alt="feature"
-                className="object-cover object-center h-full w-full bg--imagen"
-                src={fondoUno}
-              />
-            </div>
+            
             {/* <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button> */}
           </section>
+        </div>
+        {/* IMAGENES INICIO */}
+        <section className="w-screen border">
+              <div className="max-w-max  w-full mb-10 lg:mb-0 overflow-hidden">
+                <img
+                  alt="feature"
+                  className="object-cover object-center h-full w-screen"
+                  src={fondoUno}
+                />
+              </div>
+              <div className="max-w-max  w-full mb-10 lg:mb-0 overflow-hidden">
+                <img
+                  alt="feature"
+                  className="object-cover object-center h-full w-screen"
+                  src={fondoDos}
+                />
+              </div>
+              <div className="max-w-max  w-full mb-10 lg:mb-0 overflow-hidden ">
+                <img
+                  alt="feature"
+                  className="object-cover object-center h-full w-screen bg--imagen"
+                  src={fondoUno}
+                />
+              </div>
+            </section>
+            {/* FIN DE IMAGENES */}
           <section>
             <div className="bg-[#425cc7]  py-20 px-6 font-[sans-serif]">
-              <div className="container mx-auto text-center">
+              <div className="contenedor container mx-auto text-center">
                 <div className="mx-auto text-6xl flex justify-center text-center text-white ">
                   <Link to={`/proyectos`} className="hover:scale-150">
                     <FaPlus />
@@ -205,8 +211,9 @@ const inicio = () => {
               </div>
             </div>
           </section>
+          {/* SECCION DE CONTACTO INICIO */}
           <Contacto />
-        </div>
+          {/* SECCION DE CONTACTO FIN */}
       </motion.div>
     </>
   );
