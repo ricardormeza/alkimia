@@ -37,7 +37,7 @@ const inicio = () => {
     enter: {
       opacity: 1,
       transition: {
-        duration: 2,
+        duration: 5,
       },
     },
     exit: {
