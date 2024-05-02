@@ -58,8 +58,8 @@ export default function nosotros() {
         </div>
       </section>
       {/* seccion-dos inicio */}
-      <div className=" mx-auto contenedor-circulo">
-        <div className="contenedor contenedor-cirlculo-uno">
+      <div className="mx-auto contenedor-circulo">
+        <div className=" contenedor contenedor-cirlculo-uno">          
           <h2 className="title-font sm:text-2xl text-left text-3xl  font-medium text-gray-900">
             Nuestro proceso
           </h2>
