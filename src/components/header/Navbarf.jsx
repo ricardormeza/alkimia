@@ -52,7 +52,7 @@ export default function Navbarf() {
                   className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   {" "}
-                  +51 {"("}664{")"}-211-9491
+                  +52 {"("}664{")"}-211-9491
                 </Link>
               </div>
               {/* ICONOS */}
