@@ -78,34 +78,6 @@ const inicio = () => {
       <motion.div {...anim(opacity)}>
         <HeroGift />
         <div className="contenedor ">
-          {/* contenedor de dos imagenes viejo inicio */}
-          {/* <section className=" mx-auto py-12 md:py-6">
-                <div className=" box">
-                  <div className="div1 borde circuloGris">
-                    
-                    <div className="div2 bordeDos circuloAzul">
-                      
-                    </div>
-                  </div>
-                  
-                  <div className="contenido-hero">
-                    <div className="contenido-hero_titulo ">
-                      <p className="espacio">Esto es </p>
-                      <p>&#32;</p>
-                      <h1> ALKIMIA</h1>
-                    </div>
-                    <div className="contenido-hero_cta">
-                      <h2 className="fuenteTitulo">Una aleación que logra resultados increíbles</h2>
-                      <Link to="#" onClick={scrollToContact}>
-                        <button className="inline-flex mt-9 items-center justify-center px-5 py-1 text-base font-medium text-center text-white hover:text-sky-500 border border-gray-300 rounded-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                          Contáctanos
-                        </button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </section> */}
-          {/* contenedor de dos imagenes viejo FIN */}
           <motion.div
             initial={{ opacity: 0}}
             whileInView={{ opacity: 1 }}
@@ -160,9 +132,9 @@ const inicio = () => {
               </motion.div>
             </main>
           </motion.div>
+        </div>
           {/* SECCION CARDS INICIO */}
           <Cards />
-          <section className="">
           {/* SECCIÓN CARDS FIN */}
             {/* PROYECTOS INICIO */}
             <div className="contenedor flex flex-col text-center w-full my-20">
@@ -172,8 +144,6 @@ const inicio = () => {
             </div>
             
             {/* <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button> */}
-          </section>
-        </div>
         {/* IMAGENES INICIO */}
         <section className="w-screen border">
               <div className="max-w-max  w-full mb-10 lg:mb-0 overflow-hidden">
