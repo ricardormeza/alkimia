@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import CirculoAzul from "../../assets/circulo-azul1.webp";
 
 const scrollToContact = () => {
@@ -10,13 +12,16 @@ const scrollToContact = () => {
 };
 
 export default function HeroGift() {
+  useEffect(() => {
+    AOS.init({duration:1000});
+  }, [])
   return (
     <>
       <section className="contenedor py-24 gifs-centrados ">
-        <div className=" contenedor-hero-gifs">
+        <div data-aos="fade-right" className=" contenedor-hero-gifs">
           <div className="play-on-hover"></div>
           {/* <img src={HeroGif} className='play-on-hover' alt="" /> */}
-          <div id="moviendo" className="marginado">
+          <div id="moviendo" className="marginado" data-aos="fade-up-left">
             <img
               src={CirculoAzul}
               className="imgAzul"

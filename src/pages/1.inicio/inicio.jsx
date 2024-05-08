@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 // import Animat from '../../components/animat/Animat'
 import fondoDos from "../../assets/pixel-art-7284052_1280.png";
@@ -9,6 +10,8 @@ import { FaPlus } from "react-icons/fa";
 import Cards from "../../components/cards/cards";
 import HeroGift from "../../components/HeroGift/HeroGift";
 import { motion } from "framer-motion";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // UseTitle({title: 'Agencia de Mercadotecnia'})
 
@@ -45,6 +48,10 @@ const inicio = () => {
     },
   };
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+  
   return (
     <>
       <Helmet>
@@ -77,7 +84,7 @@ const inicio = () => {
 
       <motion.div {...anim(opacity)}>
         <HeroGift />
-        <div className="contenedor ">
+        <div className="contenedor " data-aos="fade-right">
           <motion.div
             initial={{ opacity: 0}}
             whileInView={{ opacity: 1 }}
@@ -100,7 +107,7 @@ const inicio = () => {
                 transition={{
                     duration: 1.5,
                 }}
-                  className="subtituto--heading fuenteTitulo pb-4">
+                  className="subtituto--heading fuenteTitulo pb-4"> 
                   Una agencia de marketing digital especializada en resultados.
                 </motion.h2>
               </div>
@@ -118,14 +125,14 @@ const inicio = () => {
               transition={{
                   duration: 1.5,
               }}
-              className="container contenido--de_subtitulo pb-4">
+              className="container contenido--de_subtitulo pb-4" data-aos="fade-right"> 
                 <p>
                   2POINT is a full-service digital agency focused on branding,
                   animated websites, and fully managed digi tal and social
                   marketing. Whether you&#39;re a global brand or a local shop, we&#39;ve
                   got the strategy to help you grow.
                 </p>
-                <p>
+                <p data-aos="fade-left">
                   Expertos en marketing digital con más de 10 años de experiencia.
                   Expertos en marketing digital con más de 10 años de experiencia.
                 </p>
